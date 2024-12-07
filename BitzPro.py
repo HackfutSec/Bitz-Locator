@@ -7,7 +7,6 @@ import os
 import sys
 import time
 
-
 os.system('cls')
 class bcolors:
     GREEN = '\033[92m'
@@ -21,6 +20,7 @@ banner = {'''
           #License : MIT  
           #Key Api : 31e252c500824c59ba5976071afad9b0
           #Version : BITZ Pro 2.0
+          WebLocate: https://calltracer.in/
           [Warning] I am not responsible for the way you will use this program [Warning]
           __________.__  .__  __         .____                         __  .__               
           \______   \  | |__|/  |________|    |    ____   ____ _____ _/  |_|__| ____   ____  
