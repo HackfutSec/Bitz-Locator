@@ -1,49 +1,93 @@
-Bitz Pro 2.0: Localisation de Numéros de Téléphone
-Bitz Pro 2.0 est un programme Python qui permet de localiser un numéro de téléphone et de fournir des informations détaillées sur sa localisation, y compris la latitude, la longitude, le pays, la ville, et le fournisseur de service. Il utilise plusieurs bibliothèques Python et services d'API tels que phonenumbers, OpenCage Geocode, et Folium pour effectuer les différentes étapes de l'analyse.
+# 📍 **Bitz Locator**  
 
-Fonctionnalités :
-Localisation du numéro de téléphone : Analyse le numéro de téléphone pour déterminer sa localisation géographique (pays, ville, fournisseur).
-Fournisseur de service : Identifie le fournisseur du numéro de téléphone à partir de sa signature.
-Génération d'une carte interactive : Utilise Folium pour créer une carte interactive à partir des coordonnées géographiques et sauvegarde la carte sous forme de fichier HTML.
-Lien Google Maps : Fournit un lien direct vers la localisation sur Google Maps.
-Utilisation de l'API OpenCage : Permet de récupérer des informations géographiques détaillées sur la localisation à partir de l'API OpenCage Geocoder.
-Prérequis :
-Avant de lancer le programme, vous devez installer les dépendances suivantes :
+## 📚 **Description**  
+**Bitz Locator** is a Python-based phone number geolocation tool that retrieves and displays detailed information about a phone number, including location, carrier, and a visual map representation. Powered by OpenCage API, this tool offers precise geolocation data for security auditing and research purposes.  
 
-phonenumbers
-folium
-requests
-opencage
-Pour installer les dépendances, vous pouvez utiliser la commande suivante :
+---
 
-bash
-Copier le code
-pip install phonenumbers folium requests opencage
-Utilisation :
-Lancez le script.
-Entrez le numéro de téléphone que vous souhaitez localiser. Assurez-vous qu'il soit au format international, par exemple : +33XXXX.
-Entrez votre clé API OpenCage pour obtenir des informations géographiques détaillées. Si vous n'en avez pas, vous pouvez en obtenir une gratuitement en vous inscrivant sur le site d'OpenCage.
-Le programme vous affichera :
-La localisation géographique du numéro.
-Le fournisseur de service associé au numéro.
-Une carte interactive avec le marquage de la localisation.
-Un lien vers la localisation sur Google Maps.
-Le programme génère un fichier cartefound.html contenant la carte interactive que vous pouvez visualiser dans votre navigateur.
-Exemple d'usage :
-bash
-Copier le code
-$ python location_tool.py
-[!] Entrer le numéro à localiser (format international, ex: +33XXXX): +33123456789
-[!] Localisation: France, Paris
-[!] Fournisseur de service: Orange
-...
-[!] Carte sauvegardée sous: cartefound.html
-[!] Lien vers Google Maps: https://www.google.com/maps/place/48.8566,2.3522
-Avertissements :
-Utilisation responsable : Ce programme est destiné à des fins éducatives. L'auteur ne se tient pas responsable de l'utilisation malveillante du programme.
-Clé API OpenCage : Vous devez disposer d'une clé API valide pour interroger l'API OpenCage. Vous pouvez obtenir une clé gratuite sur leur site web.
-License :
-MIT License : Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
-Contact :
-Auteur : Hackfut
-Contact : Telegram
+## ⚙️ **Features**  
+- ✅ **Phone Number Geolocation:** Get detailed information about a phone number's approximate location.  
+- ✅ **Carrier Information:** Identify the service provider associated with the phone number.  
+- ✅ **Map Integration:** Generate an interactive map using Folium.  
+- ✅ **Google Maps Integration:** Direct access to the location via Google Maps.  
+- ✅ **API Integration:** OpenCage Geocode API for accurate data retrieval.  
+
+---
+
+## 🚀 **Installation**  
+
+1. **Clone the Repository:**  
+   ```bash
+   git clone https://github.com/HackfutSec/Bitz-Locator.git
+   cd Bitz-Locator
+   ```
+
+2. **Ensure Python is Installed:**  
+   ```bash
+   python --version
+   ```
+
+3. **Install Required Dependencies:**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 🛠️ **Usage**  
+
+1. **Run the Script:**  
+   ```bash
+   python bitz_locator.py
+   ```
+
+2. **Provide Information:**  
+   - Enter the phone number in international format (e.g., `+1XXXXXXXXXX`).  
+   - Provide a valid **OpenCage API key**.  
+
+3. **Output Includes:**  
+   - Location details (Country, City, Latitude, Longitude).  
+   - Service Provider information.  
+   - An interactive HTML map saved as `cartefound.html`.  
+   - A direct Google Maps link to the location.  
+
+4. **Open the Map:**  
+   ```bash
+   open cartefound.html
+   ```
+
+---
+
+## 🔑 **API Key**  
+- You will need a valid **OpenCage API Key**.  
+- Get one from [OpenCage Geocoding API](https://opencagedata.com/).  
+
+---
+
+## 📊 **Dependencies**  
+- `phonenumbers`  
+- `folium`  
+- `opencage`  
+- `requests`  
+
+Install them via:  
+```bash
+pip install phonenumbers folium opencage requests
+```
+
+---
+
+## 🔒 **Disclaimer**  
+⚠️ **This tool is intended for educational and security research purposes only.**  
+The author assumes no responsibility for misuse or malicious activities.  
+
+---
+
+## 📞 **Contact**  
+- **Author:** Hackfut  
+- **Telegram:** [t.me/HackfutSec](https://t.me/HackfutSec)  
+
+---
+
+## 📄 **License**  
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.  
